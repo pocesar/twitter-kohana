@@ -30,4 +30,4 @@ else
 ```
 
 Done. The redirect should happen in a popup, since the callback calls `window.close()`. The module takes care of the cookies and session variables for you. 
-If you want, extend the original `Controller_Twitterauth_Index` controller so you can control the denied / errors by yourself (currently it simply ignores it)
+If you want, overwrite the original `Controller_Twitterauth_Index` controller so you can control the denied / errors by yourself (currently it simply ignores it) or even override the callback Route using `Route::set('twitter-auth', 'your-route')`
